@@ -5,42 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Quiz - Desenvolvimento Embrionário</title>
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Howler.js para sons -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
-
-  <!-- Confetti -->
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Quiz do Desenvolvimento Embrionário</h1>
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="curiosidades.html">Curiosidades</a>
-    </nav>
-  </header>
+  <div class="quiz-container">
+    <h1>Quiz: Desenvolvimento Embrionário</h1>
+    <div id="progress">1/10</div>
+    <div id="question"></div>
+    <div id="options"></div>
+    <div id="feedback"></div>
+    <button id="next-btn" style="display:none;">Próxima pergunta</button>
+  </div>
 
-  <main>
-    <section id="quiz-container">
-      <div id="pergunta"></div>
-      <ul id="opcoes"></ul>
-      <div id="feedback"></div>
-      <button id="proxima">Próxima Pergunta</button>
-      <div id="progresso"></div>
-    </section>
+  <!-- Sons -->
+  <audio id="sound-correct" src="audios/acerto.mp3"></audio>
+  <audio id="sound-wrong" src="audios/erro.mp3"></audio>
 
-    <section id="resultado" style="display: none;">
-      <h2>Resultado Final</h2>
-      <p id="pontuacao-final"></p>
-      <button onclick="location.reload()">Tentar Novamente</button>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 • Projeto Educacional</p>
-  </footer>
-
+  <!-- Scripts -->
   <script src="quiz.js"></script>
 </body>
 </html>
