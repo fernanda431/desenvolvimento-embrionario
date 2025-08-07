@@ -1,0 +1,5 @@
+<!-- Botão para ouvir o batimento cardíaco -->
+<audio controls>
+  <source src="assets/audios/coracao.mp3" type="audio/mpeg">
+  Seu navegador não suporta áudio.
+</audio>

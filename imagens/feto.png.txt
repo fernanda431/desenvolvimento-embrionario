@@ -1,0 +1,2 @@
+<!-- Exemplo no curiosidades.html -->
+<img src="assets/imagens/feto.png" alt="Feto em desenvolvimento" class="feto-imagem">

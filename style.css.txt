@@ -1,0 +1,110 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
+  text-align: center;
+}
+
+.top-bar {
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.side-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background: white;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.side-menu a {
+  display: block;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  color: #333;
+}
+
+.home-content h1 {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+.rosa {
+  color: #e91e63;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.azul {
+  color: #2196f3;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.subtitulo {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.botao {
+  display: block;
+  padding: 15px 25px;
+  margin: 10px auto;
+  border-radius: 30px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.botao:hover {
+  transform: scale(1.05);
+}
+
+.botao.azul {
+  background-color: #2196f3;
+}
+
+.botao.rosa {
+  background-color: #e91e63;
+}
+
+.creditos {
+  margin-top: 2rem;
+  font-family: 'Times New Roman', serif;
+  color: #2196f3;
+}
+
+.creditos-titulo {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.curiosidade-frase {
+  font-size: 14px;
+  margin: 20px auto;
+  max-width: 80%;
+  color: #444;
+  font-style: italic;
+}

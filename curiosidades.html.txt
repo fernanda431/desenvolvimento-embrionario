@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curiosidades - Desenvolvimento Embrionário</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- model-viewer para o feto 3D -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <!-- Anime.js para animações -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Curiosidades do Desenvolvimento Embrionário</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="quiz.html">Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="modelo3d">
+      <h2>Modelo 3D do Feto</h2>
+      <model-viewer 
+        src="modelos3d/feto.glb" 
+        auto-rotate 
+        camera-controls 
+        touch-action="pan-y"
+        style="width: 100%; max-width: 500px; height: 400px;">
+      </model-viewer>
+
+      <div class="audio-section">
+        <h3>Batimento Cardíaco</h3>
+        <audio controls>
+          <source src="audios/coracao.mp3" type="audio/mpeg">
+          Seu navegador não suporta áudio.
+        </audio>
+      </div>
+    </section>
+
+    <section class="curiosidades">
+      <h2>10 Curiosidades sobre a 2ª a 4ª Semana</h2>
+      <ul id="lista-curiosidades">
+        <!-- Itens serão animados via JS -->
+        <li>🧬 O coração começa a bater por volta do 22º dia após a fecundação.</li>
+        <li>🧠 O tubo neural, que se tornará o cérebro e a medula espinhal, começa a se formar.</li>
+        <li>👁️ Os primeiros esboços dos olhos e ouvidos já aparecem na 4ª semana.</li>
+        <li>👶 O embrião mede cerca de 4 a 5 mm no final da 4ª semana.</li>
+        <li>🌡️ O desenvolvimento é influenciado por hormônios maternos desde o início.</li>
+        <li>🫀 O sistema circulatório é o primeiro a funcionar.</li>
+        <li>🦴 Os somitos, que formarão os ossos e músculos, começam a aparecer na 3ª semana.</li>
+        <li>🍽️ A formação inicial do intestino já começa na 4ª semana.</li>
+        <li>🔬 As células-tronco embrionárias estão altamente ativas nesse período.</li>
+        <li>🌟 Pequenos movimentos involuntários já podem acontecer no final da 4ª semana.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 • Projeto Educacional • Ensino Médio</p>
+  </footer>
+
+  <script>
+    // Animação ao carregar curiosidades
+    anime({
+      targets: '#lista-curiosidades li',
+      translateX: [-100, 0],
+      opacity: [0, 1],
+      delay: anime.stagger(200),
+      duration: 1000,
+      easing: 'easeOutExpo'
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desenvolvimento Embrionário</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" defer></script>
+</head>
+<body>
+  <!-- Barra superior -->
+  <div class="top-bar">
+    <span>✔ Conhecimento Bônus!</span>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </div>
+
+  <!-- Menu sanduíche -->
+  <nav id="sideMenu" class="side-menu">
+    <a href="index.html">Início</a>
+    <a href="curiosidades.html">Curiosidades</a>
+    <a href="quiz.html">Quiz</a>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main class="home-content">
+    <h1><span class="rosa">Desenvolvimento</span> <span class="azul">Embrionário</span></h1>
+    <p class="subtitulo">Explore o fascinante mundo do desenvolvimento humano</p>
+
+    <!-- Botões -->
+    <div class="botoes">
+      <a href="curiosidades.html" class="botao azul">
+        💡 Explorar Curiosidades
+      </a>
+      <a href="quiz.html" class="botao rosa">
+        🧠 Testar Conhecimento
+      </a>
+    </div>
+
+    <!-- Frases rotativas -->
+    <p id="fraseCuriosidade" class="curiosidade-frase"></p>
+
+    <!-- Créditos -->
+    <div class="creditos">
+      <h2 class="creditos-titulo">UFAC - ENFERMAGEM</h2>
+      <p>Acad. Enf. Fernanda Páscoa</p>
+      <p>Acad. Enf. Talita Souza</p>
+      <p>Acad. Enf. Sarah Freitas</p>
+      <p>Acad. Enf. Henrique Costa</p>
+    </div>
+  </main>
+</body>
+</html>

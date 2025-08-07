@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz - Desenvolvimento Embrionário</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Howler.js para sons -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Quiz do Desenvolvimento Embrionário</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="curiosidades.html">Curiosidades</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="quiz-container">
+      <div id="pergunta"></div>
+      <ul id="opcoes"></ul>
+      <div id="feedback"></div>
+      <button id="proxima">Próxima Pergunta</button>
+      <div id="progresso"></div>
+    </section>
+
+    <section id="resultado" style="display: none;">
+      <h2>Resultado Final</h2>
+      <p id="pontuacao-final"></p>
+      <button onclick="location.reload()">Tentar Novamente</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 • Projeto Educacional</p>
+  </footer>
+
+  <script src="quiz.js"></script>
+</body>
+</html>

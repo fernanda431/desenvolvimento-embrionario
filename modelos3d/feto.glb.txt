@@ -1,0 +1,11 @@
+<!-- Importa a lib do model-viewer -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+<!-- Modelo 3D interativo -->
+<model-viewer 
+  src="assets/modelos3d/feto.glb" 
+  auto-rotate 
+  camera-controls 
+  alt="Feto 3D"
+  style="width: 100%; height: 400px;">
+</model-viewer>
